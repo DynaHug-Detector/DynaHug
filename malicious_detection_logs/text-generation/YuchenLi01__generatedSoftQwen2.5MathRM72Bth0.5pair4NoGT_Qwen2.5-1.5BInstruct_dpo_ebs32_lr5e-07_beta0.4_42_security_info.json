@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "4783fe10ac3adce15ac8f358ef5462739852c569",
+    "size": 2776833,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "b1f1d5a4a01e8712c5ea719a0cb3f663587cf304",
+        "title": "Training in progress, step 200",
+        "date": "2025-06-06T19:43:50.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/YuchenLi01/generatedSoftQwen2.5MathRM72Bth0.5pair4NoGT_Qwen2.5-1.5BInstruct_dpo_ebs32_lr5e-07_beta0.4_42/d393aae0d7665baafe5ca97fe7ba94653d04872a/files?blob-id=4783fe10ac3adce15ac8f358ef5462739852c569&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

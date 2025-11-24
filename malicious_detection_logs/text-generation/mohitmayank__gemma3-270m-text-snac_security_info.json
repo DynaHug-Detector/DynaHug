@@ -1,0 +1,100 @@
+{
+    "type": "file",
+    "oid": "fd9eb29241f3ec91e2b29183b1600ce9f392bd0e",
+    "size": 5304,
+    "lfs": {
+        "oid": "82fc81f8d0874c13e163d8535c2c2fd547f112150e79d614bb483c26bc5a4151",
+        "size": 5304,
+        "pointerSize": 129
+    },
+    "xetHash": "a6038a09731b3b5b523c61d1a777106da107999b88d6fb8f30b6938cf8be4400",
+    "path": "training_args.bin",
+    "lastCommit": {
+        "id": "b52ab9d47894a89c9c87b8705984e93e8e7393c7",
+        "title": "End of training",
+        "date": "2025-08-18T19:15:40.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "unsafe",
+            "message": "This file is vulnerable to threat(s) PAIT-PYTCH-100.",
+            "reportLink": "https://protectai.com/insights/models/mohitmayank/gemma3-270m-text-snac/bf0cae497e1f4f03a183ac5d2451738f25f65a96/files?blob-id=fd9eb29241f3ec91e2b29183b1600ce9f392bd0e&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "suspicious",
+            "message": "Detected malware signatures: Py.Malware.CodeExec___main___ANY_GLOBAL",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "caution",
+            "pickleImports": [
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SchedulerType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "torch",
+                    "name": "device",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "__main__",
+                    "name": "TrainingArgumentsCustom",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.training_args",
+                    "name": "OptimizerNames",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.state",
+                    "name": "PartialState",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "HubStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_pt_utils",
+                    "name": "AcceleratorConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DistributedType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SaveStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "IntervalStrategy",
+                    "safety": "suspicious"
+                }
+            ],
+            "message": "This file contains imports that require your attention. Click on the pickle button to get more detail.",
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "queued",
+            "message": "QUEUED",
+            "reportLink": "https://www.virustotal.com/gui/file/82fc81f8d0874c13e163d8535c2c2fd547f112150e79d614bb483c26bc5a4151?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "safe",
+            "message": "Safe Pickle-based model",
+            "reportLink": "https://research.jfrog.com/model-threats/pickle-malcode?utm_source=huggingface",
+            "reportLabel": "Get more details at JFrog Research portal"
+        }
+    }
+}

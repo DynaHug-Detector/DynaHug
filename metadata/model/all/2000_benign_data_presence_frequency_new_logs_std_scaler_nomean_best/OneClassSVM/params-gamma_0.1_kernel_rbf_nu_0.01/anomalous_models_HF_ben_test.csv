@@ -1,0 +1,7 @@
+name,filename,decision_score
+sancharidan/quantized_expfinder,sancharidan/quantized_expfinder/pytorch_model.bin,-0.7611762419570889
+yoshitomo-matsubara/bert-large-uncased-sst2,yoshitomo-matsubara/bert-large-uncased-sst2/pytorch_model.bin,-0.18501413652391563
+ndubuisi/pfam_init,ndubuisi/pfam_init/pytorch_model.bin,-0.5843751045300469
+shahrukhx01/gbert-hasoc-german-2019,shahrukhx01/gbert-hasoc-german-2019/pytorch_model.bin,-0.16891378491501596
+M-FAC/bert-tiny-finetuned-sst2,M-FAC/bert-tiny-finetuned-sst2/pytorch_model.bin,-0.09105369882305714
+echarlaix/bert-base-uncased-sst2-static-quant-test,echarlaix/bert-base-uncased-sst2-static-quant-test/pytorch_model.bin,-0.742205363785044

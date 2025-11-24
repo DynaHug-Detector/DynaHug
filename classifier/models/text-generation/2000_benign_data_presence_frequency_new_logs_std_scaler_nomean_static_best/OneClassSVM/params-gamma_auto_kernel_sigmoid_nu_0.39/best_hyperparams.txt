@@ -1,0 +1,1 @@
+{'gamma': 'auto', 'kernel': 'sigmoid', 'nu': 0.39}

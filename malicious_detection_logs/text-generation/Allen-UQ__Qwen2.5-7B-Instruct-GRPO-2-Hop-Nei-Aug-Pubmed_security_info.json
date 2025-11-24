@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "6bce3a0a3866c4791a74d83d78f6824c3af64ec3",
+    "size": 3383407,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "190d446222e2e0e498a93f3901344ef93ab9bb45",
+        "title": "Training in progress, step 1",
+        "date": "2025-06-03T12:00:12.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/Allen-UQ/Qwen2.5-7B-Instruct-GRPO-2-Hop-Nei-Aug-Pubmed/88083372ab952de1806fb3604dd85fac29067fb8/files?blob-id=6bce3a0a3866c4791a74d83d78f6824c3af64ec3&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

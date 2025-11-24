@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "84ef7fb594b5c0979e48bdeddb60a0adef33df0b",
+    "size": 798156,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "092ca2eee41a93e267e7fd4794992d091b2f37f3",
+        "title": "Initial commit",
+        "date": "2025-07-21T18:01:31.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/Xgi01/DialoGPT-medium-fitness-trainerjoke/e01a8c3e2c7dbc14f52f85a53769a0b3b5a6f709/files?blob-id=84ef7fb594b5c0979e48bdeddb60a0adef33df0b&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

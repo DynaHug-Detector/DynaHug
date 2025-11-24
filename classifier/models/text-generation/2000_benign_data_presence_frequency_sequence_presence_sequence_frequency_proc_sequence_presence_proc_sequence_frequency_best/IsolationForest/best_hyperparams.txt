@@ -1,0 +1,1 @@
+{'contamination': 0.01, 'max_samples': 128, 'n_estimators': np.int64(100), 'random_state': 42}

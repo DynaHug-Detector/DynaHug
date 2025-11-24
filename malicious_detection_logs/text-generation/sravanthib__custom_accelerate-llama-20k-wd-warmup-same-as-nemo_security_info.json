@@ -1,0 +1,100 @@
+{
+    "type": "file",
+    "oid": "d7e1242410488bf1ff5d58a2b15f3cfd9c0c021f",
+    "size": 5944,
+    "lfs": {
+        "oid": "2a2f7f4a89ec7b3f2e6eb03cfe1e58750ee99d874accf42e7ceb88a1e8b1be03",
+        "size": 5944,
+        "pointerSize": 129
+    },
+    "xetHash": "bb343a7692201ce79c23e038841930dd013b2c3a46f502c2d0c8f1bfd30bd378",
+    "path": "training_args.bin",
+    "lastCommit": {
+        "id": "aa5b9b60736680b0bc25e32894ed90d64e565c0f",
+        "title": "Training in progress, step 100",
+        "date": "2025-07-28T00:55:03.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "unsafe",
+            "message": "This file is vulnerable to threat(s) PAIT-PYTCH-100.",
+            "reportLink": "https://protectai.com/insights/models/sravanthib/custom_accelerate-llama-20k-wd-warmup-same-as-nemo/2ce5b9b2b3a7101a6c0614b09fd601d0f9980af0/files?blob-id=d7e1242410488bf1ff5d58a2b15f3cfd9c0c021f&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "suspicious",
+            "message": "Detected malware signatures: Py.Malware.CodeExec___main___ANY_GLOBAL",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "caution",
+            "pickleImports": [
+                {
+                    "module": "transformers.training_args",
+                    "name": "OptimizerNames",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "torch",
+                    "name": "device",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DistributedType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_pt_utils",
+                    "name": "AcceleratorConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "HubStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.state",
+                    "name": "PartialState",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SchedulerType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "IntervalStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "__main__",
+                    "name": "TrainingArguments",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SaveStrategy",
+                    "safety": "suspicious"
+                }
+            ],
+            "message": "This file contains imports that require your attention. Click on the pickle button to get more detail.",
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "queued",
+            "message": "QUEUED",
+            "reportLink": "https://www.virustotal.com/gui/file/2a2f7f4a89ec7b3f2e6eb03cfe1e58750ee99d874accf42e7ceb88a1e8b1be03?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "safe",
+            "message": "Safe Pickle-based model",
+            "reportLink": "https://research.jfrog.com/model-threats/pickle-malcode?utm_source=huggingface",
+            "reportLabel": "Get more details at JFrog Research portal"
+        }
+    }
+}

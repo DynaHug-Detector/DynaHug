@@ -1,0 +1,1 @@
+{'batch_size': 32, 'gamma': 1, 'kernel': 'rbf', 'nu': 0.12}

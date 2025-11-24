@@ -1,0 +1,125 @@
+{
+    "type": "file",
+    "oid": "1cbc247b4b5bcf5cc51976a83e27f5581be82ae9",
+    "size": 7544,
+    "lfs": {
+        "oid": "d5b1a790a4efea168ae7c039b418ec08b50bda3010d328ed7a5008fd48b986b5",
+        "size": 7544,
+        "pointerSize": 129
+    },
+    "xetHash": "7821b57a155ab3dc48dc751f5626d1811a8f465fb6f4780ada00b516f6e822f4",
+    "path": "training_args.bin",
+    "lastCommit": {
+        "id": "0ec649f7857f633a53d63184f7ced8d016a509c2",
+        "title": "Upload folder using huggingface_hub",
+        "date": "2025-07-04T14:48:11.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "queued",
+            "message": "",
+            "reportLink": ""
+        },
+        "avScan": {
+            "status": "suspicious",
+            "message": "Detected malware signatures: Py.Malware.Obfuscation___builtin___getattr_GLOBAL",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unsafe",
+            "pickleImports": [
+                {
+                    "module": "torch",
+                    "name": "device",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DistributedType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.integrations.deepspeed",
+                    "name": "HfDeepSpeedConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SaveStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "llamafactory.hparams.training_args",
+                    "name": "TrainingArguments",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.training_args",
+                    "name": "OptimizerNames",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SchedulerType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "__builtin__",
+                    "name": "getattr",
+                    "safety": "dangerous"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "HubStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_pt_utils",
+                    "name": "AcceleratorConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.state",
+                    "name": "PartialState",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "torch",
+                    "name": "bfloat16",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "IntervalStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.integrations.deepspeed",
+                    "name": "HfTrainerDeepSpeedConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DeepSpeedPlugin",
+                    "safety": "suspicious"
+                }
+            ],
+            "message": "This file contains imports that may be unsafe.",
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "safe",
+            "message": "0/77 engines detect it as malicious.",
+            "reportLink": "https://www.virustotal.com/gui/file/d5b1a790a4efea168ae7c039b418ec08b50bda3010d328ed7a5008fd48b986b5?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "safe",
+            "message": "Pickle-based model using getattr in a non-malicious way\nSafe Pickle-based model",
+            "reportLink": "https://research.jfrog.com/model-threats/pickle-getattr?utm_source=huggingface",
+            "reportLabel": "Get more details at JFrog Research portal"
+        }
+    }
+}

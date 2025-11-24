@@ -1,0 +1,10 @@
+.venv/
+logs/
+*_dataset/
+MALHUG*/
+output/
+__pycache__/
+# dont trace inference.py changes here since it wont generalize to all models.
+*.log
+test/
+classifier/data/malicious_syscall_counts_text_generation_seq_proc.csv

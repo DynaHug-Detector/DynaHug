@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "4ebe4bb3f3114daf2e4cc349f24873a1175a35d7",
+    "size": 798293,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "58f8401ae1e7d4155e361dd8619ea59790689acb",
+        "title": "Upload tokenizer",
+        "date": "2025-07-02T16:17:20.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/vkuzometa/fp8-opt-125m/58f8401ae1e7d4155e361dd8619ea59790689acb/files?blob-id=4ebe4bb3f3114daf2e4cc349f24873a1175a35d7&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

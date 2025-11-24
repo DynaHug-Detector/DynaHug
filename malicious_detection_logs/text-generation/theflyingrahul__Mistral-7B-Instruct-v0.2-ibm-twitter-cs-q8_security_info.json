@@ -1,0 +1,103 @@
+{
+    "type": "file",
+    "oid": "0ef3a28a38816b7f41327e626a21461b3f64486d",
+    "size": 6353,
+    "lfs": {
+        "oid": "e13161519b50bcbd0001c9f55b9368fb44072011f0f17c5c6a5cb76649333463",
+        "size": 6353,
+        "pointerSize": 129
+    },
+    "xetHash": "7643c18cf921814c27d46c20392bccfaacb8c1faec19b75f76a95bf6bf7ef2bd",
+    "path": "training_args.bin",
+    "lastCommit": {
+        "id": "7dcf9a0b84c690823ba313eb7d6bfe6bae26bb5c",
+        "title": "Training in progress, epoch 1",
+        "date": "2025-08-20T15:30:54.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "queued",
+            "message": "",
+            "reportLink": ""
+        },
+        "avScan": {
+            "status": "safe",
+            "version": "1.4.3/27738"
+        },
+        "pickleImportScan": {
+            "status": "unsafe",
+            "pickleImports": [
+                {
+                    "module": "torch",
+                    "name": "device",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "trl.trainer.sft_config",
+                    "name": "SFTConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SaveStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.training_args",
+                    "name": "OptimizerNames",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "IntervalStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_pt_utils",
+                    "name": "AcceleratorConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "HubStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.state",
+                    "name": "PartialState",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DistributedType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SchedulerType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "__builtin__",
+                    "name": "getattr",
+                    "safety": "dangerous"
+                }
+            ],
+            "message": "This file contains imports that may be unsafe.",
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "queued",
+            "message": "QUEUED",
+            "reportLink": "https://www.virustotal.com/gui/file/e13161519b50bcbd0001c9f55b9368fb44072011f0f17c5c6a5cb76649333463?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "queued",
+            "message": "",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

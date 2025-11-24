@@ -1,0 +1,1 @@
+{'batch_size': 128, 'gamma': 0.01, 'kernel': 'sigmoid', 'nu': 0.34}

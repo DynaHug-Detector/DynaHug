@@ -1,0 +1,4 @@
+name,filename,decision_score
+star23/newstart,star23/newstart/pytorch_model.bin,-5.408788278445285
+mkiani/gpt2-system,mkiani/gpt2-system/pytorch_model.bin,-5.4096460568778255
+wn3/gpt2,wn3/gpt2/pytorch_model.bin,-5.408864175416293

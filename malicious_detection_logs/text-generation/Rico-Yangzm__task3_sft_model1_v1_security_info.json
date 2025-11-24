@@ -1,0 +1,105 @@
+{
+    "type": "file",
+    "oid": "8ff5ac845504a9647d612f1f825b8ae98d386493",
+    "size": 6161,
+    "lfs": {
+        "oid": "95a5ec64d33c7bd7ca93a133acdf511b5bb459d494ecdf81fd40424e10faa6fa",
+        "size": 6161,
+        "pointerSize": 129
+    },
+    "xetHash": "6e32145253e440b4efa68b68a00d6c435021f3a339b5944ef268ca8c9b626f81",
+    "path": "training_args.bin",
+    "lastCommit": {
+        "id": "9139af56f9a494872f0116caf2c106db4ddf1e9b",
+        "title": "Upload folder using huggingface_hub",
+        "date": "2025-08-26T08:26:29.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "queued",
+            "message": "",
+            "reportLink": ""
+        },
+        "avScan": {
+            "status": "suspicious",
+            "message": "Detected malware signatures: Py.Malware.Obfuscation___builtin___getattr_GLOBAL",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unsafe",
+            "pickleImports": [
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "HubStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "trl.trainer.sft_config",
+                    "name": "SFTConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "__builtin__",
+                    "name": "getattr",
+                    "safety": "dangerous"
+                },
+                {
+                    "module": "transformers.trainer_pt_utils",
+                    "name": "AcceleratorConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.state",
+                    "name": "PartialState",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DistributedType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "IntervalStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SchedulerType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SaveStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.training_args",
+                    "name": "OptimizerNames",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "torch",
+                    "name": "device",
+                    "safety": "suspicious"
+                }
+            ],
+            "message": "This file contains imports that may be unsafe.",
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "File not scanned in VirusTotal",
+            "reportLink": "https://www.virustotal.com/gui/file/95a5ec64d33c7bd7ca93a133acdf511b5bb459d494ecdf81fd40424e10faa6fa?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "queued",
+            "message": "",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

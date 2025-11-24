@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "0b8035eee7e0b8c2cb7a7d028d7ddbe584ad867b",
+    "size": 579075,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "0b6a6a6b256db0a84ce85a95d76d77ac9ee91bc3",
+        "title": "BabyLM-community/eng-zho-baseline-small",
+        "date": "2025-07-22T13:22:51.000Z"
+    },
+    "securityFileStatus": {
+        "status": "queued",
+        "protectAiScan": {
+            "status": "queued",
+            "message": "",
+            "reportLink": ""
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

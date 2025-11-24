@@ -1,0 +1,103 @@
+{
+    "type": "file",
+    "oid": "3616b3b443703c287bf781f0619d6a5a8fae56c9",
+    "size": 6353,
+    "lfs": {
+        "oid": "63832a789f5a68f68df5143b7a134c817979ad954b1772eed06fc2f1370378cd",
+        "size": 6353,
+        "pointerSize": 129
+    },
+    "xetHash": "6cc2d2fb446132b289b03c63d90f6b5719e0ae4cff9f5c72bc846a0833a9a89c",
+    "path": "training_args.bin",
+    "lastCommit": {
+        "id": "2a1d3b7901bc2c7855c40c99fea817a8fa80f9ee",
+        "title": "Training in progress, epoch 1",
+        "date": "2025-08-11T20:14:52.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "suspicious",
+            "message": "This file is vulnerable to threat(s) PAIT-PYTCH-101.",
+            "reportLink": "https://protectai.com/insights/models/theflyingrahul/Mistral-7B-Instruct-v0.2-twcs-summarized-cs-q8/3445ac63890d95ce1c59837ff7c3ebb435bdd970/files?blob-id=3616b3b443703c287bf781f0619d6a5a8fae56c9&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "version": "1.4.3/27729"
+        },
+        "pickleImportScan": {
+            "status": "unsafe",
+            "pickleImports": [
+                {
+                    "module": "__builtin__",
+                    "name": "getattr",
+                    "safety": "dangerous"
+                },
+                {
+                    "module": "accelerate.state",
+                    "name": "PartialState",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "IntervalStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SchedulerType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "HubStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SaveStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "trl.trainer.sft_config",
+                    "name": "SFTConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.training_args",
+                    "name": "OptimizerNames",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "torch",
+                    "name": "device",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_pt_utils",
+                    "name": "AcceleratorConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DistributedType",
+                    "safety": "suspicious"
+                }
+            ],
+            "message": "This file contains imports that may be unsafe.",
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "queued",
+            "message": "QUEUED",
+            "reportLink": "https://www.virustotal.com/gui/file/63832a789f5a68f68df5143b7a134c817979ad954b1772eed06fc2f1370378cd?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "safe",
+            "message": "Pickle-based model using getattr in a non-malicious way\nSafe Pickle-based model",
+            "reportLink": "https://research.jfrog.com/model-threats/pickle-getattr?utm_source=huggingface",
+            "reportLabel": "Get more details at JFrog Research portal"
+        }
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "type": "file",
+    "oid": "4a456024a46d45ac266c647f33426a285e5507b5",
+    "size": 5777,
+    "lfs": {
+        "oid": "5d108167f49e89eb968c6cf563b0db15cbfc3f634137f49ca99c5fdc28508c27",
+        "size": 5777,
+        "pointerSize": 129
+    },
+    "xetHash": "9406ff5f4d1c0c158ebbce4faea459c0ef1639e389a267d6128432fe9b75f181",
+    "path": "training_args.bin",
+    "lastCommit": {
+        "id": "b444ed71bd08757a9de42c1d7653b97f5c46ce19",
+        "title": "Training in progress, step 40",
+        "date": "2025-08-23T23:51:40.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "suspicious",
+            "message": "This file is vulnerable to threat(s) PAIT-PYTCH-101.",
+            "reportLink": "https://protectai.com/insights/models/ArZzzz/2A/3d8242501bc7d296caec8f0019e5128d0d6cde9b/files?blob-id=4a456024a46d45ac266c647f33426a285e5507b5&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "suspicious",
+            "message": "Detected malware signatures: Py.Malware.Obfuscation___builtin___getattr_GLOBAL",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unsafe",
+            "pickleImports": [
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "HubStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "__builtin__",
+                    "name": "getattr",
+                    "safety": "dangerous"
+                },
+                {
+                    "module": "transformers.trainer_pt_utils",
+                    "name": "AcceleratorConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.state",
+                    "name": "PartialState",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DistributedType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "IntervalStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SchedulerType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "torch",
+                    "name": "device",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SaveStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.training_args",
+                    "name": "OptimizerNames",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.training_args",
+                    "name": "TrainingArguments",
+                    "safety": "suspicious"
+                }
+            ],
+            "message": "This file contains imports that may be unsafe.",
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "queued",
+            "message": "QUEUED",
+            "reportLink": "https://www.virustotal.com/gui/file/5d108167f49e89eb968c6cf563b0db15cbfc3f634137f49ca99c5fdc28508c27?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "safe",
+            "message": "Pickle-based model using getattr in a non-malicious way\nSafe Pickle-based model",
+            "reportLink": "https://research.jfrog.com/model-threats/pickle-getattr?utm_source=huggingface",
+            "reportLabel": "Get more details at JFrog Research portal"
+        }
+    }
+}

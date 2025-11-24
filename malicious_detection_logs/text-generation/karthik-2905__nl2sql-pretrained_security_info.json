@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "7dd790c8aeb586456d72ef32cb522e6e66a173f4",
+    "size": 1889,
+    "path": "training_metrics.json",
+    "lastCommit": {
+        "id": "e18f0395098f34767743bf8610f6b38545e4e640",
+        "title": "Upload folder using huggingface_hub",
+        "date": "2025-07-18T10:45:03.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/karthik-2905/nl2sql-pretrained/95b998b62081ad8778b63355487196c5beb6934c/files?blob-id=7dd790c8aeb586456d72ef32cb522e6e66a173f4&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

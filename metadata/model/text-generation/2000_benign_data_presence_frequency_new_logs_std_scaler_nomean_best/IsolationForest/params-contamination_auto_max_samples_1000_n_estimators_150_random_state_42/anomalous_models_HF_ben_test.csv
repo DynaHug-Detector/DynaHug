@@ -1,0 +1,10 @@
+name,filename,decision_score
+OmniSVG/OmniSVG,OmniSVG/OmniSVG/pytorch_model.bin,-0.02866912703260882
+openbmb/MiniCPM3-4B,openbmb/MiniCPM3-4B/pytorch_model.bin,-0.12331364762865904
+mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_32bit,mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_32bit/pytorch_model.bin,-0.26160733524734514
+mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_16bit,mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_16bit/pytorch_model.bin,-0.26353272607708267
+mohamedelmesawy/jais-13b-chat-4bit,mohamedelmesawy/jais-13b-chat-4bit/pytorch_model.bin,-0.08920572416675099
+Ma7ee7/WikiGPT-25M,Ma7ee7/WikiGPT-25M/pytorch_model.bin,-0.0017440826227200779
+q-allen/Taiwan-LLaMa-v1.0-4bits-GPTQ,q-allen/Taiwan-LLaMa-v1.0-4bits-GPTQ/pytorch_model.bin,-0.15200190065132435
+KangarooGroup/kangaroo,KangarooGroup/kangaroo/pytorch_model.bin,-0.04978197732638501
+pytorch/Phi-4-mini-instruct-FP8,pytorch/Phi-4-mini-instruct-FP8/pytorch_model.bin,-0.26377107571090264

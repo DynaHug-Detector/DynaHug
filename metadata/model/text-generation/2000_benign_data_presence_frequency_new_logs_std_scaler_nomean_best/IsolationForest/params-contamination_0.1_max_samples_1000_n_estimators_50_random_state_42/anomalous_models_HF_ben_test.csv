@@ -1,0 +1,5 @@
+name,filename,decision_score
+danny911kr/calm-mix-large,danny911kr/calm-mix-large/pytorch_model.bin,-0.0629116495225302
+adresgezgini/Turkish-GPT-2-Finetuned_digital_ads,adresgezgini/Turkish-GPT-2-Finetuned_digital_ads/pytorch_model.bin,-0.025857859450779064
+huggingtweets/alt_kia,huggingtweets/alt_kia/pytorch_model.bin,-0.027241240664339694
+danny911kr/calm-large,danny911kr/calm-large/pytorch_model.bin,-0.10230216185302882

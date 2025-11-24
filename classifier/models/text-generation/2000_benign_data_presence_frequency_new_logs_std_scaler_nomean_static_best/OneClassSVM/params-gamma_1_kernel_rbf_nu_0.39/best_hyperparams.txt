@@ -1,0 +1,1 @@
+{'gamma': 1, 'kernel': 'rbf', 'nu': 0.39}

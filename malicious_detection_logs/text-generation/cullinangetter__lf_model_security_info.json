@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "46afd45a01903d54cf462f52e4d74b45b3f462f5",
+    "size": 1491,
+    "path": "tokenizer_config.json",
+    "lastCommit": {
+        "id": "ab29c18caf9a3c46be499bf0132caa100c20e89e",
+        "title": "Upload 9 files",
+        "date": "2025-06-19T08:00:41.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/cullinangetter/lf_model/5f6284b2c5ca1c9d497cb44b2848c0d62de8b722/files?blob-id=46afd45a01903d54cf462f52e4d74b45b3f462f5&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

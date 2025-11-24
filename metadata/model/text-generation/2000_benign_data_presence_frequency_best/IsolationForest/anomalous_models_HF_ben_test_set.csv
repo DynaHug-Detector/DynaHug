@@ -1,0 +1,7 @@
+name,filename,decision_score
+RajuKandasamy/tamillama_tiny_30m,pytorch_model.bin,-0.013143332232314675
+clibrain/Llama-2-13b-ft-instruct-es-gptq-4bit,pytorch_model.bin,-0.13220525565778474
+openbmb/MiniCPM4-8B-Eagle-vLLM,pytorch_model.bin,-0.0032662746095190043
+HaoranWei/Vary-toy,pytorch_model.bin,-0.07340307029006077
+Jung/t5-large-finetuned,pytorch_model.bin,-0.0832803668878822
+xun/Qwen-Audio-Chat-Int4,pytorch_model.bin,-0.1015537204805903

@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "5afe4fd5351ffde12c3d17fd2b58e2cf955b9248",
+    "size": 112167,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "234334ef53ce332c4e214668a5c6eb85f3b7d751",
+        "title": "BabyLM-community/nor-baseline-gemma",
+        "date": "2025-07-20T21:47:58.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/BabyLM-community/nor-baseline-gemma/234334ef53ce332c4e214668a5c6eb85f3b7d751/files?blob-id=5afe4fd5351ffde12c3d17fd2b58e2cf955b9248&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

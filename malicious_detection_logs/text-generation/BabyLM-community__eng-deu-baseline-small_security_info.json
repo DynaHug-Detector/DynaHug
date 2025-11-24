@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "1a0fd24c7d5363de21ee04496dc76aec51e3991d",
+    "size": 508329,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "8e9a0f1ae570312d1a6bd67b4111c79d3d50fb60",
+        "title": "BabyLM-community/eng-deu-baseline-small",
+        "date": "2025-07-22T18:04:32.000Z"
+    },
+    "securityFileStatus": {
+        "status": "queued",
+        "protectAiScan": {
+            "status": "queued",
+            "message": "",
+            "reportLink": ""
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

@@ -1,0 +1,5 @@
+name,filename,decision_score
+openbmb/MiniCPM3-4B,openbmb/MiniCPM3-4B/pytorch_model.bin,-0.20559352544524856
+mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_32bit,mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_32bit/pytorch_model.bin,-0.035357140368068585
+mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_16bit,mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_16bit/pytorch_model.bin,-0.035789043637604934
+pytorch/Phi-4-mini-instruct-FP8,pytorch/Phi-4-mini-instruct-FP8/pytorch_model.bin,-0.035580837034302704

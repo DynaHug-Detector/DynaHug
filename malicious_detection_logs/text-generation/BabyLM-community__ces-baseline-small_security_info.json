@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "29e2aa5cc1ac5690dd2069e27a315a3d5d3ca2b7",
+    "size": 124433,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "756e3be56790632be6f31c8fdca6c5dd9af2ccbe",
+        "title": "BabyLM-community/ces-baseline-small",
+        "date": "2025-07-17T12:15:54.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/BabyLM-community/ces-baseline-small/954d755736527b24ff5bf7c536ef7c43919627bc/files?blob-id=29e2aa5cc1ac5690dd2069e27a315a3d5d3ca2b7&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

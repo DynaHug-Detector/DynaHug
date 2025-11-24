@@ -1,0 +1,48 @@
+{
+    "type": "file",
+    "oid": "93262fddb12f8ee2fad7edfb2e242c915f49d38c",
+    "size": 9143653,
+    "lfs": {
+        "oid": "506d5d46cef8cf44395b3f6f2a687fa10890bcce70228e863f3224584af763c2",
+        "size": 9143653,
+        "pointerSize": 132
+    },
+    "xetHash": "f0f89abb885d54b17a601a0d2391011833f7ae56342f53e11cea233855f810ca",
+    "path": "vocab.pkl",
+    "lastCommit": {
+        "id": "8dda1bffbca58fdab7df2436b7f03a9280328033",
+        "title": "Upload 3 files",
+        "date": "2025-07-01T20:33:07.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "unsafe",
+            "message": "This file is vulnerable to threat(s) PAIT-TMT-301.",
+            "reportLink": "https://protectai.com/insights/models/protectai-bot/transfo-xl/8dda1bffbca58fdab7df2436b7f03a9280328033/files?blob-id=93262fddb12f8ee2fad7edfb2e242c915f49d38c&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "error",
+            "pickleImports": [],
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "safe",
+            "message": "0/77 engines detect it as malicious.",
+            "reportLink": "https://www.virustotal.com/gui/file/506d5d46cef8cf44395b3f6f2a687fa10890bcce70228e863f3224584af763c2?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "unsafe",
+            "message": "Pickle-based model with embedded malicious code",
+            "reportLink": "https://research.jfrog.com/model-threats/pickle-malcode?utm_source=huggingface",
+            "reportLabel": "Get more details at JFrog Research portal"
+        }
+    }
+}

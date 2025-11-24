@@ -1,0 +1,4 @@
+name,filename,decision_score
+pytorch/Phi-4-mini-instruct-FP8,pytorch/Phi-4-mini-instruct-FP8/pytorch_model.bin,-1.3488830680940862
+Cloudmaster/Llama-3.2-3B-torchao-final-wattn,Cloudmaster/Llama-3.2-3B-torchao-final-wattn/pytorch_model.bin,-1.3488830680940862
+mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_32bit,mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_32bit/pytorch_model.bin,-1.3488830680940862

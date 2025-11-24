@@ -1,0 +1,120 @@
+{
+    "type": "file",
+    "oid": "d0ddc0f5075ee748b51accd52aa3896962ab4baf",
+    "size": 8977,
+    "lfs": {
+        "oid": "69b2c73e7aed6816abbb39f9986fed10e5a9c18438e88f24310f9cfc8a12eb6e",
+        "size": 8977,
+        "pointerSize": 129
+    },
+    "xetHash": "5f7dcb843f2f9f6561e36991afceda095de343614e5812c5be01970a614d226c",
+    "path": "training_args.bin",
+    "lastCommit": {
+        "id": "c38d86be7e2f7eb66a57323311fb1732d9fb7525",
+        "title": "Training in progress, step 100",
+        "date": "2025-07-17T11:08:39.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "unsafe",
+            "message": "This file is vulnerable to threat(s) PAIT-PYTCH-100.",
+            "reportLink": "https://protectai.com/insights/models/sravanthib/llama-3-2-1b-custom-100-steps-logging/31235b6448d1398c6bab4c83b73cb9060e58ff7e/files?blob-id=d0ddc0f5075ee748b51accd52aa3896962ab4baf&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "suspicious",
+            "message": "Detected malware signatures: Py.Malware.CodeExec___main___ANY_GLOBAL",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "caution",
+            "pickleImports": [
+                {
+                    "module": "transformers.training_args",
+                    "name": "OptimizerNames",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "torch",
+                    "name": "bfloat16",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "torch",
+                    "name": "device",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.integrations.deepspeed",
+                    "name": "HfDeepSpeedConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "IntervalStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SaveStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.integrations.deepspeed",
+                    "name": "HfTrainerDeepSpeedConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.state",
+                    "name": "PartialState",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_pt_utils",
+                    "name": "AcceleratorConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SchedulerType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DeepSpeedPlugin",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DistributedType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "__main__",
+                    "name": "TrainingArguments",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "HubStrategy",
+                    "safety": "suspicious"
+                }
+            ],
+            "message": "This file contains imports that require your attention. Click on the pickle button to get more detail.",
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "safe",
+            "message": "0/77 engines detect it as malicious.",
+            "reportLink": "https://www.virustotal.com/gui/file/69b2c73e7aed6816abbb39f9986fed10e5a9c18438e88f24310f9cfc8a12eb6e?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "safe",
+            "message": "Safe Pickle-based model",
+            "reportLink": "https://research.jfrog.com/model-threats/pickle-malcode?utm_source=huggingface",
+            "reportLabel": "Get more details at JFrog Research portal"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.venv/
+*.log
+logs/
+output/
+__pycache__/
+data/
+old-venv/
+analysis_results/
+malicious_detection_logs/

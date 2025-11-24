@@ -1,0 +1,5 @@
+name,filename,decision_score
+zcliang22/llama3-1b-w4-g128,pytorch_model.bin,-408550448889.2976
+Sigrune/DialoGPT-Aigis,pytorch_model.bin,-408550448889.2976
+dimasik87/137883dd-77e6-40cd-9160-adbe10f60a33,pytorch_model.bin,-77034636.14362885
+Skrunbger/DialoGPT-medium-HANA,pytorch_model.bin,-408550448889.2976

@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "0ad5ecc2035b7031b88afb544ee95e2d49baa484",
+    "size": 800662,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "015a49400bd6f01a85ef4a0c83cab6f819ee27ff",
+        "title": "End of training",
+        "date": "2025-05-25T17:52:44.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/Matelq-2/SmolLM2-FT-MyDataset/bccd527148895c3ab284f3a1af0da258a74f781f/files?blob-id=0ad5ecc2035b7031b88afb544ee95e2d49baa484&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

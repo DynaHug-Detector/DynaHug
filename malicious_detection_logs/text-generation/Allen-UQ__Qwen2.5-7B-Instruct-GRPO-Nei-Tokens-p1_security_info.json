@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "1411b2a5c4a5760ef10d237d3d0b5c17ac514bf5",
+    "size": 3797597,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "b7c3939289bdbdb6294ee0c4c218c9bd3f3dc7f6",
+        "title": "Training in progress, epoch 0",
+        "date": "2025-05-29T05:20:26.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/Allen-UQ/Qwen2.5-7B-Instruct-GRPO-Nei-Tokens-p1/d44c71b95be670099d99b56a2a4b406be6e6d72c/files?blob-id=1411b2a5c4a5760ef10d237d3d0b5c17ac514bf5&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

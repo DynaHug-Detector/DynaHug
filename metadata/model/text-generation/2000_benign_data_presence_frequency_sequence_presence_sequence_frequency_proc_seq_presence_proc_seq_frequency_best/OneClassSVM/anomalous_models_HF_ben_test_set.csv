@@ -1,0 +1,6 @@
+name,filename,decision_score
+billatsectorflow/stella_en_1.5B_v5,pytorch_model.bin,-1.1503875429696997e-05
+GoofyLM/N2.2-Eye-1.3B,pytorch_model.bin,-0.5575362011121604
+Maykeye/TinyLLama-v0,pytorch_model.bin,-0.7628825668978281
+Xianjun/PLLaMa-7b-base,pytorch_model.bin,-0.29451838861837304
+falan42/llama-tiny-int4-medical_psi,pytorch_model.bin,-0.058287326410407125

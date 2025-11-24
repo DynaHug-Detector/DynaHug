@@ -1,0 +1,110 @@
+{
+    "type": "file",
+    "oid": "c84eb5cbf7bcb084c306f778429fa165cf9ef49d",
+    "size": 6801,
+    "lfs": {
+        "oid": "109c7533343c94b66eb4ed7c2f224f078041f5020a12d0d4d1f84cd99e2f3557",
+        "size": 6801,
+        "pointerSize": 129
+    },
+    "xetHash": "a59f6345ba157aa634d5bcf7e8137d584fbc8b2fe9fbd25da506baf87f9d7952",
+    "path": "training_args.bin",
+    "lastCommit": {
+        "id": "5de7793e572bc7837900a8c9d710bfc7257c9434",
+        "title": "Upload folder using huggingface_hub",
+        "date": "2025-07-25T13:34:06.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "suspicious",
+            "message": "This file is vulnerable to threat(s) PAIT-PYTCH-101.",
+            "reportLink": "https://protectai.com/insights/models/shahriargolchin/dpo_on_top_of_sft/5de7793e572bc7837900a8c9d710bfc7257c9434/files?blob-id=c84eb5cbf7bcb084c306f778429fa165cf9ef49d&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "suspicious",
+            "message": "Detected malware signatures: Py.Malware.Obfuscation___builtin___getattr_GLOBAL",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unsafe",
+            "pickleImports": [
+                {
+                    "module": "trl.trainer.dpo_config",
+                    "name": "FDivergenceType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.training_args",
+                    "name": "OptimizerNames",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "torch",
+                    "name": "device",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DistributedType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_pt_utils",
+                    "name": "AcceleratorConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "HubStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "trl.trainer.dpo_config",
+                    "name": "DPOConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.state",
+                    "name": "PartialState",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "__builtin__",
+                    "name": "getattr",
+                    "safety": "dangerous"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SchedulerType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "IntervalStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SaveStrategy",
+                    "safety": "suspicious"
+                }
+            ],
+            "message": "This file contains imports that may be unsafe.",
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "queued",
+            "message": "QUEUED",
+            "reportLink": "https://www.virustotal.com/gui/file/109c7533343c94b66eb4ed7c2f224f078041f5020a12d0d4d1f84cd99e2f3557?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "queued",
+            "message": "",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

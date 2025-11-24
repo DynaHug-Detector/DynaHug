@@ -1,0 +1,98 @@
+{
+    "type": "file",
+    "oid": "1dbb2da883f8e1290fbade144dc2af7897258e0f",
+    "size": 6673,
+    "lfs": {
+        "oid": "9fd4493c1552ffc8ab604b9981d174d27d4bfde6a50a79e16db271201bb2488c",
+        "size": 6673,
+        "pointerSize": 129
+    },
+    "xetHash": "e0a6216fdff26b76fddb201e867c941374e8f12efc64cbfec9f0c582a582c102",
+    "path": "training_args.bin",
+    "lastCommit": {
+        "id": "babd87a0958f3d40d9932e816653ef7f755aff66",
+        "title": "Upload model: nll-bg-de-trainA-cyrillic_NO-MASKING",
+        "date": "2025-07-16T20:44:20.000Z"
+    },
+    "securityFileStatus": {
+        "status": "unsafe",
+        "protectAiScan": {
+            "status": "unsafe",
+            "message": "This file is vulnerable to threat(s) PAIT-PYTCH-100.",
+            "reportLink": "https://protectai.com/insights/models/cervisiarius/nll-bg-de-trainA-cyrillic_NO-MASKING/babd87a0958f3d40d9932e816653ef7f755aff66/files?blob-id=1dbb2da883f8e1290fbade144dc2af7897258e0f&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "version": "1.4.3/27701"
+        },
+        "pickleImportScan": {
+            "status": "caution",
+            "pickleImports": [
+                {
+                    "module": "transformers.trainer_pt_utils",
+                    "name": "AcceleratorConfig",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "torch",
+                    "name": "device",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.utils.dataclasses",
+                    "name": "DistributedType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SaveStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "IntervalStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "accelerate.state",
+                    "name": "PartialState",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "SchedulerType",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.trainer_utils",
+                    "name": "HubStrategy",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "transformers.training_args",
+                    "name": "OptimizerNames",
+                    "safety": "suspicious"
+                },
+                {
+                    "module": "__main__",
+                    "name": "MyOnlineDPOConfig",
+                    "safety": "suspicious"
+                }
+            ],
+            "message": "This file contains imports that require your attention. Click on the pickle button to get more detail.",
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "queued",
+            "message": "QUEUED",
+            "reportLink": "https://www.virustotal.com/gui/file/9fd4493c1552ffc8ab604b9981d174d27d4bfde6a50a79e16db271201bb2488c?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "safe",
+            "message": "Safe Pickle-based model",
+            "reportLink": "https://research.jfrog.com/model-threats/pickle-malcode?utm_source=huggingface",
+            "reportLabel": "Get more details at JFrog Research portal"
+        }
+    }
+}

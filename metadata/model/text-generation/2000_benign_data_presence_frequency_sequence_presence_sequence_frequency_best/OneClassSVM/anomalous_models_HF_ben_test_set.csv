@@ -1,0 +1,4 @@
+name,filename,decision_score
+l3utterfly/Qwen1.5-1.8B-layla-v4,pytorch_model.bin,-0.00015965203624679347
+GoofyLM/N2.2-Eye-1.3B,pytorch_model.bin,-1.0077244921295383
+Maykeye/TinyLLama-v0,pytorch_model.bin,-1.1758639232786527

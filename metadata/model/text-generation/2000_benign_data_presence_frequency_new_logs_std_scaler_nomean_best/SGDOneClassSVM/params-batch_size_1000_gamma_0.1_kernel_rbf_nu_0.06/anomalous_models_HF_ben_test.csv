@@ -1,0 +1,11 @@
+name,filename,decision_score
+openbmb/MiniCPM3-4B,openbmb/MiniCPM3-4B/pytorch_model.bin,-0.10875411068184722
+mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_32bit,mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_32bit/pytorch_model.bin,-0.11473566596106927
+mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_16bit,mobiuslabsgmbh/Phi-4-mini-instruct_gemlite-ao_a16w4_gs_128_pack_16bit/pytorch_model.bin,-0.11473470714253078
+llmware/dragon-deci-7b-v0,llmware/dragon-deci-7b-v0/pytorch_model.bin,-0.08145812775353764
+mohamedelmesawy/jais-13b-chat-4bit,mohamedelmesawy/jais-13b-chat-4bit/pytorch_model.bin,-0.07292872194054346
+q-allen/Taiwan-LLaMa-v1.0-4bits-GPTQ,q-allen/Taiwan-LLaMa-v1.0-4bits-GPTQ/pytorch_model.bin,-0.11418918108021532
+RyotaroOKabe/syn_distilgpt2_v1,RyotaroOKabe/syn_distilgpt2_v1/pytorch_model.bin,-0.038560716206033435
+KangarooGroup/kangaroo,KangarooGroup/kangaroo/pytorch_model.bin,-0.01307562762207351
+Mathoctopus/Mistral_Parallel_7B,Mathoctopus/Mistral_Parallel_7B/pytorch_model.bin,-0.0267445739287311
+pytorch/Phi-4-mini-instruct-FP8,pytorch/Phi-4-mini-instruct-FP8/pytorch_model.bin,-0.11473609433760691

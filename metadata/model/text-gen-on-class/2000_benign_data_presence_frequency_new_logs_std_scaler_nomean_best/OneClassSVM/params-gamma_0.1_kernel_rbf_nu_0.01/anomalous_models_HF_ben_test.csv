@@ -1,0 +1,7 @@
+name,filename,decision_score
+nateraw/text-classification-flash-demo-2,nateraw/text-classification-flash-demo-2/pytorch_model.bin,-0.07754118724192094
+sancharidan/quantized_expfinder,sancharidan/quantized_expfinder/pytorch_model.bin,-0.5651826027579069
+yoshitomo-matsubara/bert-large-uncased-sst2,yoshitomo-matsubara/bert-large-uncased-sst2/pytorch_model.bin,-0.2706227863340085
+ndubuisi/pfam_init,ndubuisi/pfam_init/pytorch_model.bin,-0.0005191381864135813
+shahrukhx01/gbert-hasoc-german-2019,shahrukhx01/gbert-hasoc-german-2019/pytorch_model.bin,-0.021978337447799756
+echarlaix/bert-base-uncased-sst2-static-quant-test,echarlaix/bert-base-uncased-sst2-static-quant-test/pytorch_model.bin,-0.6209680859824338

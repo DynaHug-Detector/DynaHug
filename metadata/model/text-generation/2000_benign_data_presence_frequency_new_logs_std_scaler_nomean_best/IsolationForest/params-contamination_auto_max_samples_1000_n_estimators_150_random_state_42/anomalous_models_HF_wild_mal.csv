@@ -1,0 +1,3 @@
+name,filename,decision_score
+mkiani/gpt2-system,mkiani/gpt2-system/pytorch_model.bin,-0.37524609481060667
+wn3/gpt2,wn3/gpt2/pytorch_model.bin,-0.0895686511004471

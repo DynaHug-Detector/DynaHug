@@ -1,0 +1,42 @@
+{
+    "type": "file",
+    "oid": "cef330eee152f489fe6b8518caba251bd4eca245",
+    "size": 678328,
+    "path": "vocab.json",
+    "lastCommit": {
+        "id": "97ad2fc22e963593565ca2c36d2c01d4f8cf55e0",
+        "title": "BabyLM-community/eng-fas-baseline-small",
+        "date": "2025-07-23T01:34:06.000Z"
+    },
+    "securityFileStatus": {
+        "status": "queued",
+        "protectAiScan": {
+            "status": "queued",
+            "message": "",
+            "reportLink": ""
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "unscanned",
+            "pickleImports": [],
+            "version": "0.0.0"
+        },
+        "virusTotalScan": {
+            "status": "unscanned",
+            "message": "Not a large file",
+            "reportLink": "",
+            "reportLabel": ""
+        },
+        "jFrogScan": {
+            "status": "unscanned",
+            "message": "Not a machine-learning model",
+            "reportLink": "",
+            "reportLabel": ""
+        }
+    }
+}

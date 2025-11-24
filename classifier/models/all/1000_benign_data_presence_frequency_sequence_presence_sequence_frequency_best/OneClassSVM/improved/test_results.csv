@@ -1,0 +1,2 @@
+accuracy,precision,recall,f1,tp,tn,fp,fn,roc_auc,total_samples
+1.0,1.0,1.0,1.0,37,100,0,0,1.0,137

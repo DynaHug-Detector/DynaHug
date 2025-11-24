@@ -1,0 +1,64 @@
+{
+    "type": "file",
+    "oid": "7fde0106f9d9833ec43b085bb04a8dbd1144a2e8",
+    "size": 1934,
+    "lfs": {
+        "oid": "20b4c71d8131655cc725a5228429c4b3c683e3ec42d4cc31b7958abc98245643",
+        "size": 1934,
+        "pointerSize": 129
+    },
+    "xetHash": "08ff5eb40eff0cc285fa9701487d1a4a715d80e092c05d6c18f7a2b7b1704d04",
+    "path": "vulnerable_model.pth",
+    "lastCommit": {
+        "id": "1a552e8352f6f4f0ea33987f2e8071454796aa35",
+        "title": "Add testing models and malicious content for security research",
+        "date": "2025-08-29T07:10:14.000Z"
+    },
+    "securityFileStatus": {
+        "status": "safe",
+        "protectAiScan": {
+            "status": "safe",
+            "message": "This file has no security findings.",
+            "reportLink": "https://protectai.com/insights/models/ank13/testing-malicious-models/d73acb3081da85741e71c68b6625de56dce95470/files?blob-id=7fde0106f9d9833ec43b085bb04a8dbd1144a2e8&utm_source=huggingface"
+        },
+        "avScan": {
+            "status": "safe",
+            "message": "No security issues detected",
+            "reportLink": "https://fdtn.ai/ai-supply-chain/hugging-face?utm_source=huggingface",
+            "reportLabel": "Learn more at Cisco Foundation AI"
+        },
+        "pickleImportScan": {
+            "status": "safe",
+            "pickleImports": [
+                {
+                    "module": "collections",
+                    "name": "OrderedDict",
+                    "safety": "innocuous"
+                },
+                {
+                    "module": "torch._utils",
+                    "name": "_rebuild_tensor_v2",
+                    "safety": "innocuous"
+                },
+                {
+                    "module": "torch",
+                    "name": "FloatStorage",
+                    "safety": "innocuous"
+                }
+            ],
+            "version": "0.0.26"
+        },
+        "virusTotalScan": {
+            "status": "safe",
+            "message": "0/0 engines detect it as malicious.",
+            "reportLink": "https://www.virustotal.com/gui/file/20b4c71d8131655cc725a5228429c4b3c683e3ec42d4cc31b7958abc98245643?utm_source=huggingface",
+            "reportLabel": "See more details on VirusTotal"
+        },
+        "jFrogScan": {
+            "status": "safe",
+            "message": "Safe Pickle-based model",
+            "reportLink": "https://research.jfrog.com/model-threats/pickle-malcode?utm_source=huggingface",
+            "reportLabel": "Get more details at JFrog Research portal"
+        }
+    }
+}

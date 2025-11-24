@@ -1,0 +1,1 @@
+{'contamination': 'auto', 'max_samples': 512, 'n_estimators': np.int64(150), 'random_state': 42}

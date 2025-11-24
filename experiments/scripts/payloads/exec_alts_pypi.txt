@@ -1,0 +1,22 @@
+sysexecute - https://pypi.org/project/sysexecute/
+execute - https://pypi.org/project/execute/#description
+llm-tools-execute-shell - needs a bit of editing to make it no look execute - https://pypi.org/project/llm-tools-execute-shell/
+runnow - needs editing too because I could not pip install it, so i just edited the code manually - https://pypi.org/project/runnow/
+processrunner - https://pypi.org/project/processrunner/
+gptexec - needs a bit of editing too - https://pypi.org/project/gptexec/
+pxe - https://pypi.org/project/pxe/
+invoke - https://pypi.org/project/invoke/
+shell_cmd - https://pypi.org/project/shell-cmd/
+raft -  https://pypi.org/project/raft/#description
+gdo -  https://pypi.org/project/gdo/
+molot - https://pypi.org/project/molot/
+prcssr - https://pypi.org/project/prcssr/
+exec-utils - https://pypi.org/project/exec-utils/
+slutterprime - exec -  https://pypi.org/project/slutterprime/
+eat - exec same as slutterprime, any python code executeable and not detected - https://pypi.org/project/eat/
+exec_cmd - subprocess wrapper - https://pypi.org/project/exec_cmd/
+muss - eval - https://pypi.org/project/muss/
+llmexec - has a memory_limit parameter that needs to be overwritten - https://pypi.org/project/llmexec/
+ey - https://pypi.org/project/ey/
+
+
