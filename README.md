@@ -231,7 +231,7 @@ The main pipeline is orchestrated through `main.py` with different modes and com
 ```bash
 uv run main.py --tag <tag> [options]
 ```
-Here, the `<tag>` refers to the model task/category you want to analyze (e.g., 'text-generation', 'text-classification') in Hugging Face. We have compiled an exhaustive list of tags present in Hugging Face [here](link-to-static-repo).
+Here, the `<tag>` refers to the model task/category you want to analyze (e.g., 'text-generation', 'text-classification') in Hugging Face. We have compiled an exhaustive list of tags present in Hugging Face [here](https://github.com/DynaHug-Detector/DynaHug/blob/main/experiments/huggingface_model_categories.json).
 
 Although, these operations can take quite a while to execute due to which creating a detached session with `tmux` or `nohup` is recommended:
 For `tmux`:
