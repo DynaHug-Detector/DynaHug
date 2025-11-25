@@ -20,7 +20,7 @@ The artifacts including the pre-trained classifier models, strace logs, structur
 ## Baselines 
 We compare DynaHug to the current state-of-the-art (RQ2). We
 evaluate existing open-source detectors encompassing both
-static and dynamic analysis. We evaluate [PickleScan](https://github.com/mmaitre314/picklescan), [ModelScan](https://github.com/protectai/modelscan) and [Fickling](https://github.com/trailofbits/fickling) as our static analysis tools, and [ModelTracer](https://github.com/s2e-lab/hf-model-analyzer) as our Dynamic analysis tool.
+<!-- static and dynamic analysis. We evaluate [PickleSca]n(https://github.com/mmaitre314/picklescan), [ModelScan](https://github.com/protectai/modelscan) and [Fickling](https://github.com/trailofbits/fickling) as our static analysis tools, and [ModelTracer](https://github.com/s2e-lab/hf-model-analyzer) as our Dynamic analysis tool. -->
 Furthermore, We also evaluate whether
 LLMs can serve as an effective malicious PTM detector by
 replacing our classifier with an LLM and using the raw traces
@@ -77,6 +77,7 @@ All PyTorch model deserialization strace logs are stored in the models directory
 The malicious-straces directory follows a similar structure except that the task-tags also indicate the function for which the strace logs were collected (e.g., MALHUG_injected_text-classification).
 - **output/** - Standard output during the the dynamic analysis runs. 
 - **src/** - Source code folder containing all the core logic for downloading, dynamic analysis, archival and strace parsing.
+- **experiments/** - Folder containing the static analysis tools for training the static models and injected scripts used for the evaluation dataset.
 
 ## Notations
 - <> - Any value inside the angle brackets are placeholders for the user to replace with actual values.
