@@ -15,7 +15,7 @@ We use a total of 18,163 models for the paper. We train DynaHug on the top 2,000
 Further, we injected 2,000 models with malicious payloads to train and evaluate our model. The rest of the models were part of the ablation study (RQ3) and Clustering test (RQ4).
 
 ## Artifact location
-The artifacts including the pre-trained classifier models, strace logs, structured CSVs/parquet files for features, evaluation results and other metadata can be found in the [Zenodo](https://zenodo.org/records/17695710) setup.
+The artifacts including the pre-trained classifier models, strace logs, structured CSVs/parquet files for features, evaluation results and other metadata can be found in the [Zenodo](https://zenodo.org/records/17695710).
 
 ## Baselines 
 We compare DynaHug to the current state-of-the-art (RQ2). We
