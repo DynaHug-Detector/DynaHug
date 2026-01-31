@@ -24,7 +24,7 @@ evaluate existing open-source detectors encompassing both
 Furthermore, We also evaluate whether
 LLMs can serve as an effective malicious PTM detector by
 replacing our classifier with an LLM and using the raw traces
-collected from dynamic analysis as an input. The LLM of choice was [Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct).
+collected from dynamic analysis as an input. The LLMs chosen were [Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) and [GPT-5.2](https://platform.openai.com/docs/models/gpt-5.2).
 
 ## High-level Overview of Project Directory
 
