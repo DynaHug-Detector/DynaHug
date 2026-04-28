@@ -1,3 +1,4 @@
+from argparse import ArgumentParser
 import os
 import sys
 import io
@@ -42,4 +43,9 @@ def scannign_directory(base_dir):
 
 
 if __name__ == "__main__":
-    scannign_directory("/mnt/The_Second_Drive/Security/ML_Research/benign_test")
+    parser = ArgumentParser()
+    parser.add_argument("--dir", help="Directory to run the open source scanners on.", required=True)
+    
+    args = parser.parse_args()
+
+    scannign_directory(args.dir)

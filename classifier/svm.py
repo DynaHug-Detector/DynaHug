@@ -24,6 +24,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # t
 from utils.utils import parse_feature_from_file
 import matplotlib.pyplot as plt
 
+
+VALID_TAGS = {"feature_extraction", "text-generation", "text-classification", "all"}
+
 class SyscallAnomalyDetector:
     def __init__(self, model_path="./classifier/models/", classifier_class=OneClassSVM, classifier_params={"nu": 0.05, "gamma": "scale", "kernel": "rbf"}, tag=None, hybrid=False):
         self.model_path = model_path
@@ -426,10 +429,20 @@ class SyscallAnomalyDetector:
         MALICIOUS_SYSCALL_DATA_tc = "classifier/data/new_MALHUG_tc_malicious_syscall_counts_text-classification.parquet"
         DYNAMIC_INJECTED_DATA_tc = "classifier/data/new_MALHUG_injected_malicious_syscall_counts_text-classification.parquet"
 
+        # feature-extraction dynamic
+        BENIGN_SYSCALL_DATA_ft = "classifier/data/2000_training_benign_syscall_counts_feature-extraction.parquet"
+        MALICIOUS_SYSCALL_DATA_ft = "classifier/data/17_MALHUG_malicious_syscall_counts_feature-extraction.parquet"
+        DYNAMIC_INJECTED_DATA_ft = "classifier/data/1000_MALHUG_injected_malicious_syscall_counts_feature-extraction.parquet"
+
         # text-classification static (in progress)
         BENIGN_OPCODE_DATA_tc = None
         MALICIOUS_OPCODE_DATA_tc = None
         STATIC_INJECTED_DATA_tc = None
+
+        # feature-extraction static (in progress)
+        BENIGN_OPCODE_DATA_ft = None
+        MALICIOUS_OPCODE_DATA_ft = None
+        STATIC_INJECTED_DATA_ft = None
 
         # non-clustered dynamic
         BENIGN_SYSCALL_DATA_all = "classifier/data/new_benign_syscall_counts_all.parquet"
@@ -444,6 +457,7 @@ class SyscallAnomalyDetector:
         DATASET_MAP = {
             "text-generation": (BENIGN_SYSCALL_DATA_tg, BENIGN_OPCODE_DATA_tg, MALICIOUS_SYSCALL_DATA_tg, MALICIOUS_OPCODE_DATA_tg, DYNAMIC_INJECTED_DATA_tg, STATIC_INJECTED_DATA_tg),
             "text-classification":(BENIGN_SYSCALL_DATA_tc, BENIGN_OPCODE_DATA_tc, MALICIOUS_SYSCALL_DATA_tc, MALICIOUS_OPCODE_DATA_tc, DYNAMIC_INJECTED_DATA_tc, STATIC_INJECTED_DATA_tc),
+            "feature-extraction": (BENIGN_SYSCALL_DATA_ft, BENIGN_OPCODE_DATA_ft, MALICIOUS_SYSCALL_DATA_ft, MALICIOUS_OPCODE_DATA_ft, DYNAMIC_INJECTED_DATA_ft, STATIC_INJECTED_DATA_ft),
             "all": (BENIGN_SYSCALL_DATA_all, BENIGN_OPCODE_DATA_all, MALICIOUS_SYSCALL_DATA_all, MALICIOUS_OPCODE_DATA_all, DYNAMIC_INJECTED_DATA_all, STATIC_INJECTED_DATA_all)
         }
 
@@ -516,25 +530,80 @@ class SyscallAnomalyDetector:
             malicious_real_data_tc = pd.concat([malhug_tc_data, pklball_mal_set_dynamic_data_tc])
             print(f"Malicious real data size for text-classification: {len(malicious_real_data_tc)}")
 
-            # text-classification static and hybrid data have not been processed yet.
+            # Feature-extraction dynamic
+            malhug_ft_dynamic_data = pd.read_parquet('classifier/data/17_MALHUG_malicious_syscall_counts_feature-extraction.parquet')
+            pypi_inj_dynamic_data_ft = pd.read_parquet("classifier/data/1000_PyPI_injected_malicious_syscall_counts_feature-extraction.parquet").head(1000) # PyPI injected set
+            malhug_inj_dynamic_data_ft = pd.read_parquet('classifier/data/1000_MALHUG_injected_malicious_syscall_counts_feature-extraction.parquet').head(1000)
+            # pklball_mal_set_dynamic_data_ft = pd.read_parquet("classifier/data/new_pklball_malicious_syscall_counts_text-classification.parquet") # 3 gram text generation pickleball models
+            hf_ben_test_set_dynamic_data_ft = pd.read_parquet("classifier/data/2025_Benign_test_set_benign_syscall_counts_feature-extraction.parquet").head(2001) # Loading test set data from the training set
+            pklball_ben_set_dynamic_data_ft = pd.read_parquet("classifier/data/16_Pickleball_ben_benign_syscall_counts_feature-extraction.parquet")
+
+            # Internal test sets for text-classification, text-generation, feature-extraction and non-clustered
+            dynahug_internal_test_set_ft = pd.read_csv("classifier/data/DynaHug_internal_test_set_feature-extraction.csv")
+            dynahug_internal_test_set_tg = pd.read_csv("classifier/data/DynaHug_internal_test_set_text-generation.csv")
+            dynahug_internal_test_set_tc = pd.read_csv("classifier/data/DynaHug_internal_test_set_text-classification.csv")
+            dynahug_internal_test_set_nc = pd.read_csv("classifier/data/DynaHug_internal_test_set_non-clustered.csv")
+
+            # Internal benign test set for text-classification, text-generation, feature-extraction and non-clustered
+            dynahug_internal_benign_test_set_ft = pd.read_csv("classifier/data/DynaHug_internal_benign_test_set_feature-extraction.csv")
+            dynahug_internal_benign_test_set_tg = pd.read_csv("classifier/data/DynaHug_internal_benign_test_set_text-generation.csv")
+            dynahug_internal_benign_test_set_tc = pd.read_csv("classifier/data/DynaHug_internal_benign_test_set_text-classification.csv")
+            dynahug_internal_benign_test_set_nc = pd.read_csv("classifier/data/DynaHug_internal_benign_test_set_non-clustered.csv")
+
+            malhug_ft_data = malhug_ft_dynamic_data
+            hf_ben_test_set_data_ft = hf_ben_test_set_dynamic_data_ft
+            malhug_inj_data_ft = malhug_inj_dynamic_data_ft
+            pypi_inj_data_ft = pypi_inj_dynamic_data_ft
+            malicious_real_data_ft = malhug_ft_data
+            benign_real_dynamic_data_ft = pd.concat([hf_ben_test_set_dynamic_data_ft, pklball_ben_set_dynamic_data_ft])
+            print(f"Malicious real data size for feature-extraction: {len(malicious_real_data_ft)}")
+            print(f"Benign real data size for feature-extraction: {len(benign_real_dynamic_data_ft)}")
+
+            print(f"Internal test set size for feature-extraction: {len(dynahug_internal_test_set_ft)}")
+            print(f"Internal test set size for text-generation: {len(dynahug_internal_test_set_tg)}")
+            print(f"Internal test set size for text-classification: {len(dynahug_internal_test_set_tc)}")
+            print(f"Internal test set size for non-clustered: {len(dynahug_internal_test_set_nc)}")
+
+            print(f"Internal benign_test set size for feature-extraction: {len(dynahug_internal_benign_test_set_ft)}")
+            print(f"Internal benign_test set size for text-generation: {len(dynahug_internal_benign_test_set_tg)}")
+            print(f"Internal benign_test set size for text-classification: {len(dynahug_internal_benign_test_set_tc)}")
+            print(f"Internal benign_test set size for non-clustered: {len(dynahug_internal_benign_test_set_nc)}")
 
             DATASET_MAP = {
                 "text-generation": {
-                    "HF_ben_test": hf_ben_test_set_data_tg,
-                    "HF_wild_mal": hf_mal_wild_data_tg,
-                    "injected_pypi": pypi_inj_data_tg,
-                    "MALHUG_tg": malhug_tg_data,
-                    "MALHUG_injected": malhug_inj_data_tg,
-                    "pklball_mal": pklball_mal_data_tg,
-                    "mal_real": malicious_real_data_tg
+                    "HF_benign_test (2025)": hf_ben_test_set_data_tg,
+                    "HF_wild_mal (3)": hf_mal_wild_data_tg,
+                    "injected_pypi (1000)": pypi_inj_data_tg,
+                    "MALHUG_text-generation (20)": malhug_tg_data,
+                    "MALHUG_injected (1000)": malhug_inj_data_tg,
+                    "pickleball_mal (2)": pklball_mal_data_tg,
+                    "malicious_real (3)": malicious_real_data_tg,
+                    "Dynahug_Internal_test_set (400)": dynahug_internal_test_set_tg,
+                    "Dynahug_Internal_benign_test_set (200)": dynahug_internal_benign_test_set_tg
                 },
                 "text-classification": {
-                    "HF_ben_test": hf_ben_test_set_data_tc,
-                    "injected_pypi": pypi_inj_data_tc,
-                    "MALHUG_tc": malhug_tc_data,
-                    "MALHUG_injected": malhug_inj_data_tc,
-                    "pklball_mal": pklball_mal_data_tc,
-                    "mal_real": malicious_real_data_tc
+                    "HF_ben_test (2004)": hf_ben_test_set_data_tc,
+                    "injected_pypi (1000)": pypi_inj_data_tc,
+                    "MALHUG_text-classification (2)": malhug_tc_data,
+                    "MALHUG_injected (1000)": malhug_inj_data_tc,
+                    "pklball_mal (2)": pklball_mal_data_tc,
+                    "malicious_real (4)": malicious_real_data_tc,
+                    "Dynahug_Internal_test_set (400)": dynahug_internal_test_set_tc,
+                    "Dynahug_Internal_benign_test_set (200)": dynahug_internal_benign_test_set_tc
+                },
+                "feature-extraction": {
+                    "HF_ben_test (2017)": hf_ben_test_set_data_ft,
+                    "injected_pypi (1000)": pypi_inj_data_ft,
+                    "MALHUG_feature-extraction (17)": malhug_ft_data,
+                    "MALHUG_injected (1000)": malhug_inj_data_ft,
+                    "pklball_ben (16)": pklball_ben_set_dynamic_data_ft,
+                    "malicious_real (17)": malicious_real_data_ft,
+                    "Dynahug_Internal_test_set (400)": dynahug_internal_test_set_ft,
+                    "Dynahug_Internal_benign_test_set (200)": dynahug_internal_benign_test_set_ft
+                },
+                "all": {
+                    "Dynahug_Internal_test_set (400)": dynahug_internal_test_set_nc,
+                    "Dynahug_Internal_benign_test_set (200)": dynahug_internal_benign_test_set_nc
                 }
             }
 
@@ -552,6 +621,10 @@ class SyscallAnomalyDetector:
         
         if DATASET_MAP is None:
             print("Something went wrong while setting up the evaluation dataset, Please check if all the paths are valid and all the files referred to exist in the classifier/data directory.")
+            return
+
+        if tag not in DATASET_MAP:
+            print(f"The provided tag doesn't exist in the paper. Please try again with the valid set of tags: {' '.join(list(VALID_TAGS))}")
             return
 
         print("\n" + "="*60)
@@ -612,7 +685,7 @@ class SyscallAnomalyDetector:
                 # explain_model_with_shap(clf, ben_wild_data, num_samples_to_explain=25, plot_save_dir=metadata_dir, feature_types=feature_types)
 
         for dataset_type in cluster_dataset:
-            print(f"Number of detections for {dataset_type}")
+            print(f"Number of models detected for {dataset_type}")
             for clf_name, num_detections in res[dataset_type]:
                 print(f"{clf_name} : {num_detections}")
             print("=" * 60)
@@ -714,9 +787,9 @@ def validate_feature_types(feature_types):
     print("All features are valid!")
 
 if __name__ == "__main__":
+
     ALLOWED_FEATURE_TYPES = {"presence", "frequency", "sequence_presence", "sequence_frequency", "gen_presence", "gen_frequency", "gen_seq_presence", "gen_seq_frequency", "proc_seq_presence", "proc_seq_frequency"}
 
-    # TODO: fix all args.hybrid and args.static references
     parser = argparse.ArgumentParser(description="Train and classify models using One Class SVM")
     parser.add_argument("--work-dir", default=os.getcwd(), help="Working directory")
     parser.add_argument("--tag", required=True, help="Task tag of the classifier being trained.")
@@ -926,7 +999,8 @@ if __name__ == "__main__":
             os.makedirs(test_set_dir, exist_ok=True)
             mask = test_labels == 1
             benign_df = test_data.loc[mask].reset_index(drop=True)
-            benign_df.to_csv(os.path.join(test_set_dir, "HF_ben_test_set_text-generation.csv"), index=False)
+            benign_df.to_csv(os.path.join(test_set_dir, f"{args.mode}_DynaHug_internal_benign_test_set_{args.tag}.csv"), index=False)
+            test_data.to_csv(os.path.join(test_set_dir, f"{args.mode}_DynaHug_internal_test_set_{args.tag}.csv"), index=False)
 
     if args.evaluate:
         if not args.tag:
