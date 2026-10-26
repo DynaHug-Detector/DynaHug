@@ -1,6 +1,7 @@
 # DynaHug-Detector
 
 - [Paper](./assets/DynaHug-paper.pdf)
+- [Supplementary Material](./assets/DynaHug-paper-supplementary.pdf)
 - [Website](https://dynahug-detector.github.io/) 
 
 # DynaHug: Learning to Detect Malicious Pre-trained Models via Dynamic Analysis
@@ -11,7 +12,7 @@ This is the official repository for DynaHug: **Dyna**mic Analysis of **Hug**ging
 <img alt="Workflow" src="./assets/Workflow-Diagram.png" />
 
 ## Datasets 
-We use a total of 25,108 models for the paper. We train DynaHug on the top 2,000 models, sorted by likes from HuggingFace. We also employ datasets from Malhug (84) and PickleBall (4) as part of our malicious set, totalling 88 real malicious models.
+We use a total of 39,000 models for the paper. We train DynaHug on the top 2,000 models, sorted by likes from HuggingFace. We also employ datasets from Malhug (84) and PickleBall (4) as part of our malicious set, totalling 88 real malicious models.
 Further, we injected 2,000 models with malicious payloads to train and evaluate our model. The rest of the models were part of the ablation study (RQ3) and Clustering test (RQ4).
 
 ## Artifact location
